@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tô No Corre - Formulário</title>
+    <link rel="stylesheet" href="styleForm.css">
+    
+</head>
+<body>
+    <div class="titles">
+    
+       <h1>Currículo Rápido</h1>
+
+    </div>
+    
+    <div class="form">
+    
+        
+        <!--form se diz a formulario,post=cadastro get=busca-->
+             <form action="https://formsubmit.co/4ee60d39b52401222b83717860162af1" method="POST">
+        
+             <p>Nome: <input type="text" name="nome"> <br></p>
+             <p>Idade:<input type="text" name="idade"> <br></p>
+             <p>Telefone: <input type="text" name="telefone"> <br></p>
+             <p>Nome do Responsável:<input type="text" name="nomeResponsavel"> <br></p>
+             <p>Telefone do Responsável: <input type="text" name="telefoneResponsavel"><br></p>
+             <p>Cidade: <input type="text" name="Cidade"><br></p>
+             <p>Bairro: <input type="text" name="Bairro"><br></p>
+        
+        <!--input type radio:todos com mesmo nome,sendo assim sendo possivel selecionar apenas 1-->
+             <!--Obs:o "cheked" significa que sera sempre selecionado por padrao a opção-->
+             <p class="subTitle">Escolaridade:<br></p>
+        <p><input type="radio" name="escolaridade" value="Ensino Superior"> Ensino Superior</p>
+        <p> <input type="radio" name="escolaridade" value="Ensino Médio">Ensino Médio</p>
+        <p> <input type="radio" name="escolaridade" value="Ensino Fundamental"> Ensino Fundamental</p> 
+        <p> <br>
+            <p class="subTitle"> Está Estudando?</p>
+            <br>
+            <p><select name="cursando"></p>
+                <p><option>Sim</option></p>
+                <p><option>Não</option></p>
+            
+        </select>
+        <br>
+        <p class="subTitle">Horário de Estudo:<br></p>
+
+        <p><input type="radio" name="Horário de Estudo" value="Manhã"> Manhã</p>
+        <p> <input type="radio" name="Horário de Estudo" value="Tarde">Tarde</p>
+        <p> <input type="radio" name="Horário de Estudo" value="Noturno"> Noturno</p>
+         <br>
+        <!--checkbox com nomes diferentes sendo possivel selecionar 1 ou mais-->
+        <p class="subTitle">Conhecimentos<br></p>
+        <p>Possui algum Curso?</p>
+        <p><input type="radio"name="Cursos" value="sim">Sim</p>
+        <p><input type="radio"name="Cursos" value="nao">Não</p>
+        <p>Caso tenha selecionado sim,escreva seu curso <br><input type="text" name="Curso"> <br></p>
+        <p class="subTitle">Possui Noções de Informática?<br></p>
+        <p><input type="radio"name="Cursos" value="sim">Sim</p>
+        <p><input type="radio"name="Cursos" value="nao">Não</p>
+        <br>
+        
+        
+        
+        <p class="subTitle">Descreeva um pouco sobre você, e suas habilidades:<br></p>
+        <!--textarea um espaço para descrever o produto ou algo-->
+        <p><textarea name="sobre" rows="10" cols="30"> </textarea>
+        <br>
+        <!--input type submit:botao para enviar o formulario preenchido-->
+        <input type="submit" class="button">
+        
+        </input>
+        
+        
+        </form>
+        </div>
+</body>
+</html>
