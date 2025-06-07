@@ -72,3 +72,21 @@ p{
     cursor: pointer;
     border: #FFFFFF
     }
+
+@media screen and (max-width: 700px){
+
+    .form{
+        width: 90vw;
+
+    }
+
+.bloco1{
+    display: table-caption;
+    margin-left: 83px;
+}
+.bloco2{
+        display: table;
+    margin-left: 93px;
+    margin-bottom: 15px;
+}
+}
